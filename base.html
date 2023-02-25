@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Round&family=Roboto&family=Unbounded:wght@500&family=Urbanist:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Todo list</title>
+</head>
+<body>
+   
+    <header><input type="text" placeholder="Enter your name" class="name"><button class="name-button">Submit</button></header>
+      <form action="">
+        <input type="text" class="todo-input" placeholder="My task for today is...">
+        <button class="todo-button" type="submit">Add a task
+        </button>
+        <button class="photo">Add a photo</button>
+    <div class="select">
+        <select name="todo" id="" class="filter-todo">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+        </select>
+    </div>
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+    
+   <div class="container">
+       
+         <input type="file" id="file" accept="image/*" hidden><div class="img-area " data-img="planetaviolet.jpg">
+ <span class="sagetica">⤒</span>
+            <h3>Upload Image</h3>
+            <p>Image most be less than <span>2MB</span></p>
+            
+        </div><button class="select-image">Select Image</button>
+    </div>
+    <script src="todo.js"></script>
+ </body>
+</html>
